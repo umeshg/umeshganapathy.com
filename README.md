@@ -1,5 +1,11 @@
 # This project is a fork from Astro Resume
 
+Hi there,
+
+My name is Umesh Ganapathy, you can call me Umesh. Welcome to my Zen Garden Project. 
+
+You can find a minimalistic point of view about me, reflections of my past thoughts and works, my current interests and some of my thought visuals about latest technology and philosophy. 
+
 ## Features
 
 - Astro v4
