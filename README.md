@@ -1,4 +1,4 @@
-# Astro Resume
+# This project is a fork from Astro Resume
 
 ## Features
 
