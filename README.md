@@ -22,9 +22,8 @@ You can find a minimalistic point of view about me, reflections of my past thoug
 - [Expressive Code](https://expressive-code.com/) source code and syntax highlighter
 
 ## Credits
-
+- [free-favicon-generator](https://favicon.io/favicon-converter/) for generating favicons
 - [astro-theme-cactus](https://github.com/chrismwilliams/astro-theme-cactus) for blog design
-- [minirezume-framer](https://minirezume.framer.website/) for resume homepage design
 
 ## Project Structure
 
