@@ -9,11 +9,11 @@ import expressiveCode from 'astro-expressive-code'
 import { expressiveCodeOptions } from './src/site.config'
 import icon from 'astro-icon'
 
-import vercel from '@astrojs/vercel/serverless'
+import cloudflare from '@astrojs/cloudflare'
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.me',
+	site: 'https://umeshganapathy.com',
 	integrations: [
 		expressiveCode(expressiveCodeOptions),
 		tailwind({
@@ -42,7 +42,9 @@ export default defineConfig({
 	},
 	prefetch: true,
 	output: 'server',
-	adapter: vercel({
-		webAnalytics: { enabled: true }
+	adapter: cloudflare({
+		platformProxy: {
+			enabled: true
+		}
 	})
 })
