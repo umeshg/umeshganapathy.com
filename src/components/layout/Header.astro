@@ -1,5 +1,6 @@
 ---
-
+import { Image } from 'astro:assets'
+import astro from '../../assets/about-umesh.png'
 ---
 
 <header class='mb-12 flex w-full flex-wrap pb-3 text-sm sm:flex-nowrap sm:justify-start'>
@@ -7,7 +8,14 @@
 		class='relative mx-auto flex w-full items-center justify-between sm:flex sm:items-center'
 		aria-label='global'
 	>
-		<a class='flex-none text-xl font-semibold' href='/' aria-label='Brand'>🏠</a>
+		<a class='flex-none text-xl font-semibold' href='/' aria-label='Umesh Ganapathy'
+			><Image
+				src={astro}
+				alt='Umesh Ganapathy Portfolio home'
+				class='h-10 w-full rounded-2xl rounded-bl-none rounded-br-none object-cover'
+				loading='eager'
+			/></a
+		>
 
 		<div class='flex flex-row items-center justify-center gap-x-5 sm:gap-x-7'>
 			<a
