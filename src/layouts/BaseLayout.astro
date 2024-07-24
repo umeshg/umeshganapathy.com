@@ -5,7 +5,7 @@ import BaseHead from '@/components/BaseHead.astro'
 import Footer from '@/components/layout/Footer.astro'
 import Header from '@/components/layout/Header.astro'
 import ThemeProvider from '@/components/ThemeProvider.astro'
-
+import { GoogleAnalytics } from 'astro-google-analytics'
 import { siteConfig } from '@/site-config'
 
 interface Props {
@@ -20,6 +20,7 @@ const {
 <html lang={siteConfig.lang} class=''>
 	<head>
 		<BaseHead articleDate={articleDate} description={description} ogImage={ogImage} title={title} />
+		<GoogleAnalytics id='G-QJ52L0142B' />
 	</head>
 
 	<body class='flex justify-center bg-background'>
