@@ -1,0 +1,206 @@
+---
+import PageLayout from '../layouts/BaseLayout.astro'
+import Section from '../components/Section.astro'
+import Card from '../components/Card.astro'
+---
+
+<PageLayout meta={{ title: 'Home' }}>
+	<div class='flex w-full flex-col gap-y-10'>
+		<Section title='About'>
+			<p class='text-muted-foreground'>
+				I was born and brought up in a small village near Thrissur called Kolazhy in Kerala, India.
+			</p>
+			<p class='text-muted-foreground'>
+				My early passion for technology led me to pursue a unique course of study after the 7th
+				grade. I joined Junior Technical High School, where I learned the basics of carpentry,
+				mechanics, and electronics. After completing my 10th grade, my interest shifted towards
+				embedded systems and programming, leading me to enroll in a Polytechnic program where I
+				obtained my Computer Science Diploma. Following that, I pursued a B.Tech in Computer Science
+				and Engineering, which I completed in 2007.
+			</p>
+			<p class='text-muted-foreground'>
+				From my childhood days, I developed a keen interest in being a generalist and building
+				businesses that make a difference, and I embarked on multiple side hustles. After
+				graduating, I stumbled upon my first job offer at an Ed Tech startup called HeyMath! in
+				Chennai as a Software Engineer. It was there that I realized the gap between being college
+				smart and possessing the actual skills required as a software developer in the business
+				world to make production-ready code. After gaining sufficient knowledge in the early years
+				of my career, I started volunteering as the Campus Connect Chair for a couple of
+				non-profits, educating students across colleges in South India. Along with my team, we
+				organized various campus programs, events, workshops, and hackathons to bridge the skill
+				gaps between the curriculum and real-world tech stacks. Additionally, I was part of the
+				managing team for two technology user groups in Chennai: the Adobe Flex User Group and the
+				HTML User Group, where we organized events, sessions, hackathons, and provided training to
+				the developer community on the latest technology trends.
+			</p>
+			<p class='text-muted-foreground'>
+				In 2012, I joined Report Bee, an Education Data Analytics company, as a founding team
+				member. As the Head of Engineering, I worked closely with the founders and CTO to build the
+				tech team and develop the product from the ground up. In 2018, XSEED Education acquired
+				Report Bee. My time with Report Bee allowed me to understand the education landscape across
+				the world and collaborate with various experts from governments and publishers such as
+				Pearson and Oxford along with building world class robust tech products and teams.
+			</p>
+			<p class='text-muted-foreground'>
+				In 2019, I decided to take a break from formal work to bond with my family. During the next
+				3 years, we visited 7 countries, relocated to the US for my wife's research, and I became
+				the dad of two amazing boys. Along with all these, I founded Collabwrite, a consulting
+				agency, through which I explored my passion to build and solve growth problems. Collabwrite
+				provided me with opportunities to work with several founders and leaders on their challenges
+				in building MVPs, product launches, and product growth. This allowed me to expand my
+				expertise beyond programming, technology, and ed tech.
+			</p>
+		</Section>
+		
+		<Section title='Work Experience'>
+			<Card
+				heading='Collabwrite'
+				subheading='Founder and CEO'
+				date='Aug 2019 - Present'
+				imagePath='/src/assets/collabwrite.png'
+				altText='Umesh Ganapathy, Founder and CEO, Collabwrite'
+				imageClass='h-9 w-auto md:-left-28'
+				href='https://www.collabwrite.com'
+			>
+				Collabwrite is a Consulting firm helps businesses develop, integrate, and maximize the value
+				of AI and IT.
+			</Card>
+			<Card
+				heading='XSEED Education'
+				subheading='Senior Technical Product Manager'
+				date='Dec 2018 - July 2019'
+				imagePath='/src/assets/xseed.png'
+				altText='Umesh Ganapathy, Senior Technical Product Manager, XSEED Education'
+				imageClass='h-8 w-auto md:-left-20'
+				href='https://www.xseededucation.com'
+			>
+				XSEED Education is a Singapore-based education company that aims to transform education from
+				rote learning to a more engaging and effective approach using structured 5-step approach in
+				each lesson: Aim, Action, Analysis, Application, and Assessment. When XSEED acquired
+				ReportBee at the end of 2018, I was responsibile for deep integration of our products and
+				aligning our teams. I also oversaw our move to infrastructure as code using terraform.
+			</Card>
+			<Card
+				heading='ReportBee'
+				subheading='Head of Engineering, Founding Team Member'
+				date='Jan 2012 - Dec 2018'
+				imagePath='/src/assets/reportbee.jpg'
+				altText='Umesh, Head of Engineering, ReportBee'
+				imageClass='h-10 w-auto md:-left-20'
+				href='https://www.reportbee.com'
+			>
+				ReportBee is an education data analytics company. We built various products for schools,
+				book publishers and government providing various analytics and reporting to stakeholders.
+				<br />Here I worked closely with founders and helped build a strong technology team of 15
+				engineers and testers. I was responsible for the engineering department's operations,
+				ensuring that projects are completed on time, within budget, and to a high standard. I also
+				worked to maintain the company's technical standards and foster collaboration among
+				engineering team.
+				<!--	<br />
+				More than the fancy title of Product Chief, most of my early days were spent on architecting,
+				developing backend systems for our code products - school management, report cards, insights,
+				question authoring, online test engine etc. I was actively involved in hiring and training new
+				team members. During my stint, lead product and support engineering teams, code reviwes, mentoring,
+				upskilling, conducted hackathons. -->
+			</Card>
+			<Card
+				heading='HeyMath!'
+				subheading='Software Engineer'
+				date='Jul 2007 - Dec 2011'
+				imagePath='/src/assets/heymath.png'
+				altText='Umesh, Software Engineer, HeyMath'
+				imageClass='h-12 w-auto md:-left-20'
+				href='https://www.heymath.com'
+			>
+				HeyMath! is an educational technology company focused on mathematics education using
+				animated and interactive visual/video lesson content.
+				<!--<br />Starting as tech support staff, I provided assistance to customer support and
+				content teams while also fixing bugs. My proactive approach led to automate many
+				repetitive support requests using scripts and extending the functionality of the backoffice
+				system. This initiative paved the way for my transition into lead development, where I
+				quickly became one of the lead developers. In this role, I contributed significantly to
+				lesson and content management platforms, an online test engine, and a school platform where students can access content.
+				Additionally, I took on the responsibility of being the release manager for the entire
+				tech products. MY experience further expanded during the later stages of my tenure, where
+				I was involved in some major tech infrastructure changes, including the migration from
+				baremetal to VPS, moving apps from windoes to linux environments. I was also of a team which did an innovative project for offline content distribution
+				in South Africa. -->
+			</Card>
+		</Section>
+
+		<Section title='Education'>
+			<Card
+				heading='Bachelors in Computer Science and Engineering'
+				subheading='Calicut University, Kerala'
+				date='June 2004 - April 2007'
+				imagePath='/src/assets/cu.png'
+				altText='Umesh, Bachelors in Computer Science and Engineering, Calicut University'
+				imageClass='h-12 w-auto md:-left-16'
+				href='https://uoc.ac.in/'
+				>Learned about advanced, algorithms, data structures, software development and introduction
+				to programming during this time.</Card
+			>
+			<Card
+				heading='Diploma in Computer Sciece'
+				subheading='Department of Technical Education, Kerala'
+				date='June 2001 - April 2004'
+				imagePath='/src/assets/mti.jpeg'
+				altText='Umesh, Diploma in Computer Science, MTI, Department of Technical Education, Kerala'
+				imageClass='h-12 w-auto md:-left-16'
+				href='http://mtithrissur.ac.in/'
+				>Learned about fundamentals of computer hardwares, programming concepts and peripherals.
+				Started dismanteling and assembling computers here.</Card
+			>
+			<Card
+				heading='Technical Highschool'
+				subheading='Junior Technical Highschool, Kerala'
+				date='June 1998 - April 2001'
+				imagePath='/src/assets/dte.jpeg'
+				altText='Umesh, Junior Technical Highschool, Kerala'
+				imageClass='h-12 w-auto md:-left-20'
+				href='https://www.dtekerala.gov.in/institutiondetail/3/'
+				>Learned about fundamentals of electronics, electrical, carpentery, mechanical, welding etc.
+				This experience gave me the curiousness and confidance to open up, learn, repair and fix
+				anything</Card
+			>
+		</Section>
+
+		<Section title='Volunteer'>
+			<Card
+				heading='Campus Connect Chair, Society for Rich Internet Applications and Rich User Interface'
+				date='Mar 2010 - Mar 2018'
+				imagePath='/src/assets/riarui.jpeg'
+				altText='Campus Connect Chair, Society for Rich Internet Applications and Rich User Interface'
+				imageClass='h-14 w-auto md:-left-16'
+				href='https://www.linkedin.com/company/society-for-rich-internet-application-&-rich-user-interface/'
+				>Lead campus connect program for RIA-RUI Society for upskilling college graduates and
+				freshers. Coordinated with Adobe, Google, Microsoft and Samsung evangelism teams for their
+				student outreach programs in conducting various activities like hackathons, hands on
+				workshops and talks.</Card
+			>
+			<Card
+				heading='Founder & Manager, HTML5 User Group Chennai'
+				date='Jul 2015 - Mar 2018'
+				imagePath='/src/assets/html5.png'
+				altText='Founder & Manager, HTML5 User Group Chennai'
+				imageClass='h-11 w-auto md:-left-32'
+				href='https://www.facebook.com/groups/html5ug'
+				>Founded and managed a volunteer driven community of frontend web developers to exchange
+				knowledge, network, get support and develop skills.</Card
+			>
+		</Section>
+	</div>
+	<a
+		href='https://calendly.com/umesh-ganapathy/30min'
+		class='mt-16 flex flex-row items-center gap-x-3 rounded-3xl border border-input px-4 py-2 text-sm shadow-sm transition-all hover:shadow-md'
+	>
+		<span class='relative flex items-center justify-center'>
+			<span
+				class='absolute inline-flex h-2 w-2 animate-ping rounded-full border border-green-400 bg-green-400 opacity-75'
+			></span>
+			<span class='relative inline-flex h-2 w-2 rounded-full bg-green-400'></span>
+		</span>
+
+		<p class='font-medium'>Schedule a call</p>
+	</a>
+</PageLayout>
