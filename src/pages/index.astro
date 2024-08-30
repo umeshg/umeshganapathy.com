@@ -16,35 +16,52 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
 <PageLayout meta={{ title: 'Home' }}>
 	<div class='flex w-full flex-col gap-y-10'>
-		<section class='flex flex-col items-center gap-y-7'>
+		<section class='flex flex-col gap-y-7'>
 			<Image
 				src={astro}
 				alt='profile photo'
-				class='h-28 w-auto rounded-full bg-[#FFBE98] p-2'
+				class='h-28 w-28 rounded-full bg-[#FFBE98] p-2'
 				loading='eager'
 			/>
 
-			<div class='flex flex-col items-center gap-y-4'>
-				<h1 class='text-4xl font-black'>hi, I'm Umesh Ganapathy</h1>
-				<h2 class='text-center text-xl'>
-					Software Engineer turned Entrepreneur.
-					<br />I love to help people and solve crazy problems using technology and AI.<br /> Very active
-					on Twitter X LinkedIn.
+			<div class='flex flex-col gap-y-4'>
+				<h1 class='text-4xl font-black'>Hello! I’m Umesh Ganapathy</h1>
+				<h2 class='text-left text-xl'>
+					I am a passionate advocate for using technology to improve lives.
+					<br />
+					As a technopreneur and software engineer, I leverage my skills to make a positive impact in
+					my community and beyond.
+					<br />
+					<br />
+					<h4 class='text-lg font-bold'>My Professional Journey</h4>
+					I began my career at HeyMath!, where I realized the significant gap between academic knowledge
+					and practical skills in software development. This experience ignited my passion for education
+					technology. I went on to become a founding member of Report Bee, an education data analytics
+					company, where I helped build the tech team and develop our product. My time at XSEED Education
+					further deepened my understanding of the education landscape and the role technology can play
+					in enhancing learning experiences.
+					<br /><br />
+					<h4 class='text-lg font-bold'>My Personal Values</h4>
+					Growing up near Thrissur, India, I developed a strong interest in technology early on, which
+					led me to pursue a diploma in Computer Science followed by a B.Tech degree. I believe in the
+					power of storytelling and community engagement, and I actively volunteer in various educational
+					initiatives. My goal is to help bridge the gap between academic curricula and real-world technology
+					applications.<br />
+					<br /><h4 class='text-lg font-bold'>Community Commitments</h4>As a family-oriented
+					individual, I am committed to making a positive difference in my community. I value
+					collaboration and am always eager to connect with like-minded individuals. I invite you to
+					join me on Twitter and LinkedIn so we can explore opportunities to innovate and drive
+					positive change together.
+					<br />
+					<br />
+					<h4 class='text-lg font-bold'>Let’s Connect!</h4>I invite you to join me on Twitter and
+					LinkedIn so we can explore opportunities to innovate and drive positive change together. I
+					look forward to connecting with you and sharing ideas on how we can harness technology to
+					improve lives. Together, we can make a meaningful impact! --- Feel free to adjust any part
+					of it to better reflect your voice or specific experiences ;)
 				</h2>
-				<a
-					href='https://calendly.com/umesh-ganapathy/30min'
-					class='flex flex-row items-center gap-x-3 rounded-3xl border border-input px-4 py-2 text-sm shadow-sm transition-all hover:shadow-md'
-				>
-					<span class='relative flex items-center justify-center'>
-						<span
-							class='absolute inline-flex h-2 w-2 animate-ping rounded-full border border-green-400 bg-green-400 opacity-75'
-						></span>
-						<span class='relative inline-flex h-2 w-2 rounded-full bg-green-400'></span>
-					</span>
 
-					<p class='font-medium'>Schedule a call</p>
-				</a>
-				<div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
+				<div class='flex flex-wrap gap-x-7 gap-y-3'>
 					<Label
 						title='Connect on Linkedin'
 						as='a'
@@ -82,6 +99,21 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 							></path>
 						</svg>
 					</Label>
+				</div>
+				<div class="w-40">
+					<a
+						href='https://calendly.com/umesh-ganapathy/30min'
+						class='flex flex-row items-center gap-x-3 rounded-3xl border border-input px-4 py-2 text-sm shadow-sm transition-all hover:shadow-md'
+					>
+						<span class='relative flex justify-center'>
+							<span
+								class='absolute inline-flex h-2 w-2 animate-ping rounded-full border border-green-400 bg-green-400 opacity-75'
+							></span>
+							<span class='relative inline-flex h-2 w-2 rounded-full bg-green-400'></span>
+						</span>
+
+						<p class='font-medium'>Schedule a call</p>
+					</a>
 				</div>
 				{
 					allPostsByDate.length > 0 && (
